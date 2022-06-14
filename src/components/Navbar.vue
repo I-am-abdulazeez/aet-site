@@ -23,11 +23,10 @@
         <v-spacer></v-spacer>
 
         <v-btn
-          class="mr-2 font-weight-medium hidden-sm-and-down grey--text text--darken-1"
+          class="mr-2 hidden-sm-and-down grey--text text--darken-1"
           text
           v-for="link of links"
           :key="link.id"
-          small
           router
           :to="link.path"
           color="white"
@@ -68,36 +67,36 @@ export default {
     links: [
       {
         text: "Home",
-        path: "/"
+        path: "/",
       },
       {
         text: "About",
-        path: "/about"
+        path: "/about",
       },
       {
         text: "Products & Services",
-        path: "/product"
+        path: "/product",
       },
       {
         text: "Industry",
-        path: "/industry"
+        path: "/industry",
       },
       {
         text: "Career",
-        path: "/career"
+        path: "/career",
       },
       {
         text: "Gallery",
-        path: "/gallery"
+        path: "/gallery",
       },
 
       {
         text: "Contact",
-        path: "/contact"
-      }
-    ]
+        path: "/contact",
+      },
+    ],
   }),
-  methods: {}
+  methods: {},
 };
 </script>
 
